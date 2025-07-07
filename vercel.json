@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "public": true,
+  "builds": [
+    {
+      "src": "public/index.php",
+      "use": "@php-dev/vercel-php@latest",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "phpVersion": "8.1.10" 
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "public/index.php"
+    }
+  ],
+  "env": {
+    "APP_KEY": "@app_key",
+    "APP_URL": "@app_url",
+    "APP_ENV": "production",
+    "APP_DEBUG": "0",
+    "LOG_CHANNEL": "stderr",
+    "CACHE_DRIVER": "array",
+    "SESSION_DRIVER": "cookie",
+    "QUEUE_CONNECTION": "sync",
+    "VIEW_COMPILED_PATH": "/tmp/storage/framework/views"
+ 
+  }
+}
