@@ -4,7 +4,7 @@
   "builds": [
     {
       "src": "public/index.php",
-      "use": "@php-dev/vercel-php@latest",
+      "use": "@php-dev/vercel-php@0.7.0",
       "config": {
         "maxLambdaSize": "15mb",
         "phpVersion": "8.1.10" 
