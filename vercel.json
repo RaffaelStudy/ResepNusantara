@@ -4,7 +4,7 @@
   "builds": [
     {
       "src": "public/index.php",
-      "use": "@vercel/php",
+      "use": "@php-dev/vercel-php@latest",
       "config": {
         "maxLambdaSize": "15mb",
         "phpVersion": "8.1.10" 
@@ -18,8 +18,8 @@
     }
   ],
   "env": {
-    "APP_KEY": "@APP_KEY",
-    "APP_URL": "APP_URL",
+    "APP_KEY": "",
+    "APP_URL": "",
     "APP_ENV": "production",
     "APP_DEBUG": "0",
     "LOG_CHANNEL": "stderr",
